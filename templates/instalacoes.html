@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Instalações do Campus</h1>
+<p>Descubra as diversas instalações disponíveis no campus.</p>
+<div class="instalacoes-list">
+    {% for instalacao in instalacoes %}
+    <div class="instalacao">
+        <h2>{{ instalacao.nome }}</h2>
+        <p>{{ instalacao.localizacao }}</p>
+        <p><strong>Horário:</strong> {{ instalacao.horario }}</p>
+        <p><strong>Contato:</strong> {{ instalacao.contato }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

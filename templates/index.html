@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <img src="{{ url_for('static', filename='img/banner.jpg') }}" alt="Campus Virtual Banner">
+    <h1>Bem-vindo ao Campus Virtual Interativo</h1>
+    <p>Melhore sua experiência no campus universitário com nosso guia digital completo.</p>
+</div>
+
+<div class="container">
+    <div class="card">
+        <img src="{{ url_for('static', filename='img/eventos.jpg') }}" alt="Eventos">
+        <h2>Eventos Acadêmicos</h2>
+        <p>Acompanhe os principais eventos acadêmicos do campus.</p>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='img/instalacoes.jpg') }}" alt="Instalações">
+        <h2>Instalações do Campus</h2>
+        <p>Descubra as diversas instalações disponíveis no campus.</p>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='img/clubes.jpg') }}" alt="Clubes">
+        <h2>Clubes e Organizações</h2>
+        <p>Envolva-se com clubes e organizações estudantis.</p>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='img/servicos.jpg') }}" alt="Serviços">
+        <h2>Serviços no Campus</h2>
+        <p>Conheça os diversos serviços disponíveis para você.</p>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='img/transporte.jpg') }}" alt="Transporte">
+        <h2>Transporte e Acesso</h2>
+        <p>Informações sobre transporte e opções de acesso ao campus.</p>
+    </div>
+</div>
+{% endblock %}

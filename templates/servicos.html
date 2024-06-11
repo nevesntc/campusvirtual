@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Serviços no Campus</h1>
+<p>Conheça os diversos serviços disponíveis para você.</p>
+<div class="servicos-list">
+    {% for servico in servicos %}
+    <div class="servico">
+        <h2>{{ servico.nome }}</h2>
+        <p>{{ servico.localizacao }}</p>
+        <p><strong>Horário:</strong> {{ servico.horario }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

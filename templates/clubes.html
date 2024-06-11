@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Clubes e Organizações Estudantis</h1>
+<p>Envolva-se com clubes e organizações estudantis.</p>
+<div class="clubes-list">
+    {% for clube in clubes %}
+    <div class="clube">
+        <h2>{{ clube.nome }}</h2>
+        <p>{{ clube.descricao }}</p>
+        <p><strong>Agenda:</strong> {{ clube.agenda }}</p>
+    </div>
+    {% endfor %}
+    
+</div>
+<div class="botao">
+    <button class="btn btn-primary" type="submit">Participar</button>
+</div>
+{% endblock %}

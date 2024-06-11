@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Transporte e Acesso</h1>
+<p>Informações sobre transporte e opções de acesso ao campus. Estacionamento perante a contato prévio</p>
+<div class="transporte-list">
+    {% for transp in transporte %}
+    <div class="transporte">
+        <h2>{{ transp.tipo }}</h2>
+        <p>{{ transp.horario }}</p>
+        <p><strong>Rota:</strong> {{ transp.rota }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

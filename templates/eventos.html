@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Eventos Acadêmicos</h1>
+<p>Acompanhe os principais eventos acadêmicos do campus.</p>
+<div class="eventos-list">
+    {% for evento in eventos %}
+    <div class="evento">
+        <h2>{{ evento.nome }}</h2>
+        <p>{{ evento.descricao }}</p>
+        <p><strong>Data:</strong> {{ evento.data }}</p>
+        <p><strong>Local:</strong> {{ evento.local }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
